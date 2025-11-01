@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" rx="24" fill="url(#bg)"/>
+
+  <!-- Animated gradient orb -->
+  <circle cx="850" cy="90" r="60" fill="url(#txt)" opacity="0.15">
+    <animate attributeName="r" values="55;65;55" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.25;0.1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Text -->
+  <g transform="translate(80,110)">
+    <text font-family="Segoe UI, Inter, sans-serif" font-size="42" font-weight="700" fill="url(#txt)">
+      Zaky Aryasatya
+    </text>
+    <text y="45" font-family="Inter, sans-serif" font-size="20" fill="#94a3b8">
+      patience
+    </text>
+  </g>
+
+  <!-- Subtle line -->
+  <line x1="80" y1="170" x2="920" y2="170" stroke="url(#txt)" stroke-width="1" opacity="0.2"/>
+
+  <!-- Animated particle -->
+  <circle cx="120" cy="200" r="4" fill="#38bdf8">
+    <animate attributeName="cx" values="120;880;120" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.2;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
+</svg>
